@@ -1,6 +1,7 @@
 import random
 import prompt
-
+ne = 'no'
+jes = 'yes'
 
 def welcome_user():
     global name
@@ -33,7 +34,10 @@ def check():
         print("Correct!!!")
         plus_poento()
     else:
-        print("'yes' is wrong answer ;(. Correct answer was 'no'")
+        if respondo == jes:
+            print(f"'{respondo}' is wrong answer ;(. Correct answer was '{ne}'")
+        elif respondo == ne:
+            print(f"'{respondo}' is wrong answer ;(. Correct answer was '{jes}'")
         print(f"Let's try again, {name}!")
 
 
