@@ -1,7 +1,6 @@
 import random
 import prompt
-ne = 'no'
-jes = 'yes'
+
 
 def welcome_user():
     global name
@@ -25,19 +24,17 @@ def start():
 def check():
     randoma = random.randint(0, 20)
     print(f'Question: {randoma}')
-    respondo = input('Your answer: ')
+    respond = prompt.string('Your answer: ')
     is_even = randoma % 2
-    if is_even == 0 and respondo == "yes":
-        print("Correct!!!")
-        plus_poento()
-    elif is_even != 0 and respondo == "no":
-        print("Correct!!!")
+    if is_even == 0:
+        korekta = 'yes'
+    elif is_even != 0:
+        korekta = 'no'
+    if respond == korekta:
+        print('Correct!')
         plus_poento()
     else:
-        if respondo == jes:
-            print(f"'{respondo}' is wrong answer ;(. Correct answer was '{ne}'")
-        elif respondo == ne:
-            print(f"'{respondo}' is wrong answer ;(. Correct answer was '{jes}'")
+        print(f"'{respond}' is wrong answer :(. Correct answer was '{korekta}'")
         print(f"Let's try again, {name}!")
 
 
@@ -46,6 +43,8 @@ def main():
     check()
     check()
     check()
+    if poento == 3:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':
