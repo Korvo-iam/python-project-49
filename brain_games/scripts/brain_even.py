@@ -21,7 +21,7 @@ def check():
         print('Correct!')
         default.plus_poento()
     else:
-        print(f"'{respond}' is wrong answer :(. Correct answer was '{korekta}'")
+        print(f"'{respond}' is wrong answer :(.Correct answer was '{korekta}'")
         print(f"Let's try again, {default.name}!")
 
 

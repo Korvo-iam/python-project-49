@@ -7,7 +7,7 @@ def start():
     default.welcome_user()
 
 
-def generate_calc ():
+def generate_calc():
     global randoma_simbolo, numero_1, numero_2
     simboloj = ['+', '-', '*']
     randoma_simbolo = random.choice(simboloj)
@@ -29,7 +29,7 @@ def check():
         print('Correct!')
         default.plus_poento()
     else:
-        print(f"'{respondo}' is wrong answer :(. Correct answer was '{korekta}'")
+        print(f"'{respondo}' is wrong answer :(.Correct answer was '{korekta}'")
         print(f"Let's try again, {default.name}!")
 
 
@@ -49,4 +49,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
