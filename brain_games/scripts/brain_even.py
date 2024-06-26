@@ -1,24 +1,11 @@
 import random
 import prompt
-
-
-def welcome_user():
-    global name
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-
-
-def plus_poento():
-    global poento
-    poento = poento + 1
+from brain_games import default
 
 
 def start():
-    welcome_user()
+    default.welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    global poento
-    poento = 0
 
 
 def check():
@@ -32,10 +19,10 @@ def check():
         korekta = 'no'
     if respond == korekta:
         print('Correct!')
-        plus_poento()
+        default.plus_poento()
     else:
         print(f"'{respond}' is wrong answer :(. Correct answer was '{korekta}'")
-        print(f"Let's try again, {name}!")
+        print(f"Let's try again, {default.name}!")
 
 
 def main():
@@ -43,8 +30,8 @@ def main():
     check()
     check()
     check()
-    if poento == 3:
-        print(f'Congratulations, {name}!')
+    if default.poento == 3:
+        print(f'Congratulations, {default.name}!')
 
 
 if __name__ == '__main__':
