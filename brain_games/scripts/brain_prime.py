@@ -17,7 +17,7 @@ def generate_num():
     global numero_1, korekta
     numero_1 = random.randint(1, 100)
     global korekta
-    print(f'Question : {numero_1}')
+    print(f'Question: {numero_1}')
     i = 1
     listo = []
     while i != numero_1:
