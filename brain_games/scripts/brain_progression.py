@@ -29,7 +29,7 @@ def generate_num():
     numeroj[cifero] = '..'
     numeroj = [str(element) for element in numeroj]
     numeroj_str = " ".join(numeroj)
-    print(numeroj_str)
+    print(f'Question: {numeroj_str}')
 
 
 def check():
