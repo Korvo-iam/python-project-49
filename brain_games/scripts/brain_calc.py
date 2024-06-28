@@ -13,6 +13,7 @@ def generate_calc():
     randoma_simbolo = random.choice(simboloj)
     numero_1 = random.randint(0, 20)
     numero_2 = random.randint(0, 20)
+    print('What is the result of the expression?')
     demando = (f'Question: {numero_1} {randoma_simbolo} {numero_2}')
     print(demando)
 
