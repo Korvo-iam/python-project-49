@@ -11,7 +11,7 @@ def start():
 def check():
     randoma = random.randint(0, 20)
     print(f'Question: {randoma}')
-    respond = input('Your answer: ')
+    respond = prompt.string('Your answer: ')
     is_even = randoma % 2
     if is_even == 0:
         korekta = 'yes'
