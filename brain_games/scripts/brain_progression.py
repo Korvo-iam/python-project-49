@@ -6,11 +6,15 @@ from brain_games import default
 def start():
     default.welcome_user()
     print('What number is missing in the progression?')
+    while default.poento != 3:
+        generate_num()
+        check()
+        if respondo != korekta:
+            break
 
 
 def generate_num():
-    global numeroj_str
-    global korekta
+    global numeroj_str, korekta
     i = 0
     numero_1 = random.randint(0, 10)
     numero_2 = random.randint(1, 10)
@@ -29,6 +33,7 @@ def generate_num():
 
 
 def check():
+    global respondo
     respondo = prompt.integer('Your answer : ')
     if respondo == korekta:
         print('Correct!')
@@ -38,16 +43,8 @@ def check():
         print(f"Let's try again, {default.name}!")
 
 
-def sub_main():
-    generate_num()
-    check()
-
-
 def main():
     start()
-    sub_main()
-    sub_main()
-    sub_main()
     if default.poento == 3:
         print(f'Congratulations, {default.name}!')
 

@@ -19,7 +19,6 @@ def generate_calc():
     randoma_simbolo = random.choice(simboloj)
     numero_1 = random.randint(0, 20)
     numero_2 = random.randint(0, 20)
-    
     demando = (f'Question: {numero_1} {randoma_simbolo} {numero_2}')
     print(demando)
 
@@ -39,11 +38,6 @@ def check():
     else:
         print(f"'{respondo}' is wrong answer :(.Correct answer was '{korekta}'")
         print(f"Let's try again, {default.name}!")
-
-
-def sub_main():
-    generate_calc()
-    check()
 
 
 def main():

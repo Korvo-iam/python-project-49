@@ -6,11 +6,15 @@ from brain_games import default
 def start():
     default.welcome_user()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    while default.poento != 3:
+        generate_num()
+        check()
+        if respondo != korekta:
+            break
 
 
 def generate_num():
-    global numero_1
-    global korekta
+    global numero_1, korekta
     numero_1 = random.randint(1, 100)
     global korekta
     print(f'Question : {numero_1}')
@@ -27,6 +31,7 @@ def generate_num():
 
 
 def check():
+    global respondo
     respondo = prompt.string('Your answer : ')
     if respondo == korekta:
         print('Correct!')
@@ -36,16 +41,8 @@ def check():
         print(f"Let's try again, {default.name}!")
 
 
-def sub_main():
-    generate_num()
-    check()
-
-
 def main():
     start()
-    sub_main()
-    sub_main()
-    sub_main()
     if default.poento == 3:
         print(f'Congratulations, {default.name}!')
 
