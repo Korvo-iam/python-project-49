@@ -6,9 +6,14 @@ from brain_games import default
 def start():
     default.welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
+    while default.poento != 3:
+        check()
+        if respond != korekta:
+            break
 
 
 def check():
+    global respond, korekta
     randoma = random.randint(0, 20)
     print(f'Question: {randoma}')
     respond = prompt.string('Your answer: ')
@@ -27,9 +32,6 @@ def check():
 
 def main():
     start()
-    check()
-    check()
-    check()
     if default.poento == 3:
         print(f'Congratulations, {default.name}!')
 
