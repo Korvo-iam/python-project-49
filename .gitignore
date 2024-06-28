@@ -1,1 +1,8 @@
 .venv
+demo.cast
+demo2.cast
+demo3.cast
+demo4.cast
+demo5.cast
+dist
+setup.cfg
