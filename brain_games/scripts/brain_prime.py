@@ -2,21 +2,22 @@ import random
 import prompt
 from brain_games import default
 
+GAME_NOMO = "brain_prime"
+DEMANDO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def start():
-    default.welcome_user()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    default.welcome_user(DEMANDO)
     while default.poento != 3:
-        generate_num()
+        generate()
         check()
         if respondo != korekta:
             break
 
 
-def generate_num():
+def generate():
     global numero_1, korekta
     numero_1 = random.randint(1, 100)
-    global korekta
+    print(DEMANDO)
     print(f'Question: {numero_1}')
     i = 1
     listo = []
@@ -32,13 +33,8 @@ def generate_num():
 
 def check():
     global respondo
-    respondo = prompt.string('Your answer : ')
-    if respondo == korekta:
-        print('Correct!')
-        default.plus_poento()
-    else:
-        print(f"'{respondo}' is wrong answer :(.Correct answer was '{korekta}'")
-        print(f"Let's try again, {default.name}!")
+    respondo = prompt.string('Your answer: ')
+    default.sub_check(respondo,korekta)
 
 
 def main():

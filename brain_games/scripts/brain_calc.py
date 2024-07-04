@@ -2,23 +2,25 @@ import random
 import prompt
 from brain_games import default
 
+GAME_NOMO = "brain_calc"
+DEMANDO = 'What is the result of the expression?'
 
 def start():
-    default.welcome_user()
-    print('What is the result of the expression?')
+    default.welcome_user(DEMANDO)
     while default.poento != 3:
-        generate_calc()
+        generate()
         check()
         if respondo != korekta:
             break
 
 
-def generate_calc():
+def generate():
     global randoma_simbolo, numero_1, numero_2
     simboloj = ['+', '-', '*']
     randoma_simbolo = random.choice(simboloj)
     numero_1 = random.randint(0, 20)
     numero_2 = random.randint(0, 20)
+    print(DEMANDO)
     demando = (f'Question: {numero_1} {randoma_simbolo} {numero_2}')
     print(demando)
 
@@ -31,13 +33,8 @@ def check():
         korekta = numero_1 - numero_2
     elif randoma_simbolo == '*':
         korekta = numero_1 * numero_2
-    respondo = prompt.integer('Your answer : ')
-    if respondo == korekta:
-        print('Correct!')
-        default.plus_poento()
-    else:
-        print(f"'{respondo}' is wrong answer :(.Correct answer was '{korekta}'")
-        print(f"Let's try again, {default.name}!")
+    respondo = prompt.integer('Your answer: ')
+    default.sub_check(respondo,korekta)
 
 
 def main():

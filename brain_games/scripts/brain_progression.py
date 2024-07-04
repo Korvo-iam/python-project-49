@@ -3,17 +3,11 @@ import prompt
 from brain_games import default
 
 
-def start():
-    default.welcome_user()
-    print('What number is missing in the progression?')
-    while default.poento != 3:
-        generate_num()
-        check()
-        if respondo != korekta:
-            break
+GAME_NOMO = "brain_progression"
+DEMANDO = 'What number is missing in the progression?'
 
 
-def generate_num():
+def generate():
     global numeroj_str, korekta
     i = 0
     numero_1 = random.randint(0, 10)
@@ -29,24 +23,18 @@ def generate_num():
     numeroj[cifero] = '..'
     numeroj = [str(element) for element in numeroj]
     numeroj_str = " ".join(numeroj)
+    print(DEMANDO)
     print(f'Question: {numeroj_str}')
 
 
 def check():
     global respondo
-    respondo = prompt.integer('Your answer : ')
-    if respondo == korekta:
-        print('Correct!')
-        default.plus_poento()
-    else:
-        print(f"'{respondo}' is wrong answer :(.Correct answer was '{korekta}'")
-        print(f"Let's try again, {default.name}!")
-
+    respondo = prompt.integer('Your answer: ')
+    default.sub_check(respondo,korekta)
 
 def main():
-    start()
-    if default.poento == 3:
-        print(f'Congratulations, {default.name}!')
+    default.start_def(GAME_NOMO)
+    
 
 
 if __name__ == '__main__':

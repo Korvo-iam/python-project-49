@@ -3,31 +3,34 @@ import prompt
 from brain_games import default
 
 
+GAME_NOMO = "brain_even"
+DEMANDO = 'Answer "yes" if the number is even, otherwise answer "no".'
+
 def start():
-    default.welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    default.welcome_user(DEMANDO)
     while default.poento != 3:
+        generate()
         check()
-        if respond != korekta:
+        if respondo != korekta:
             break
 
 
-def check():
-    global respond, korekta
+def generate():
+    global is_even
     randoma = random.randint(0, 20)
+    print(DEMANDO)
     print(f'Question: {randoma}')
-    respond = prompt.string('Your answer: ')
     is_even = randoma % 2
+
+
+def check():
+    global respondo, korekta
+    respondo = prompt.string('Your answer: ')
     if is_even == 0:
         korekta = 'yes'
     elif is_even != 0:
         korekta = 'no'
-    if respond == korekta:
-        print('Correct!')
-        default.plus_poento()
-    else:
-        print(f"'{respond}' is wrong answer :(.Correct answer was '{korekta}'")
-        print(f"Let's try again, {default.name}!")
+    default.sub_check(respondo,korekta)
 
 
 def main():
