@@ -30,11 +30,12 @@ def generate():
 def check():
     global respondo
     respondo = prompt.integer('Your answer: ')
-    default.sub_check(respondo,korekta)
+    default.sub_check(respondo, korekta)
+
 
 def main():
-    default.start_def(GAME_NOMO)
-    
+    generate()
+    check()
 
 
 if __name__ == '__main__':

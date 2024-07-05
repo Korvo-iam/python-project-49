@@ -11,3 +11,4 @@ demo6.cast
 setup.cfg
 /home/korvo/hexlet-git/python-project-49/brain_games
 /home/korvo/hexlet-git/python-project-49/brain_games/scripts/__pycache__
+brain_games/scripts/__pycache__/

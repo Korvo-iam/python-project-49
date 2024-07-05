@@ -26,15 +26,12 @@ def sub_check(rspnd, prava):
 
 
 def start_def(game):
-    print (type(game))
-    print('succcesss')
-    from brain_games.scripts import game
     global poento
     welcome_user()
     while poento != 3:
         game.generate()
         game.check()
-        if game.respondo != game.korekta:   
+        if game.respondo != game.korekta:
             break
     if poento == 3:
         print(f'Congratulations, {name}!')
