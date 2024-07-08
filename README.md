@@ -2,4 +2,4 @@
 
 https://github.com/Korvo-iam/python-project-49/actions
 
-[![asciicast](https://asciinema.org/a/lbJetqdxOIfhLUJMUucVuQD08.svg)](https://asciinema.org/a/lbJetqdxOIfhLUJMUucVuQD08)
+[![asciicast](https://asciinema.org/a/rj9vcHsh2DcGAdqIM8VTUp1ys.svg)](https://asciinema.org/a/rj9vcHsh2DcGAdqIM8VTUp1ys)
