@@ -1,4 +1,4 @@
-from brain_games.scripts import brain_even as game
+from brain_games.games import brain_progression as game
 from brain_games import default
 
 

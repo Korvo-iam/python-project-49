@@ -1,4 +1,4 @@
-from brain_games.scripts import brain_calc as game
+from brain_games.games import brain_gcd as game
 from brain_games import default
 
 

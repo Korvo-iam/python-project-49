@@ -9,13 +9,14 @@ packages = [
   { include = "brain_games" },
 ]
 
+
 [tool.poetry.scripts]
+brain-gcd = "brain_games.scripts.game_gcd:main"
+brain-calc = "brain_games.scripts.game_calc:main"
+brain-even = "brain_games.scripts.game_even:main"
+brain-prime = "brain_games.scripts.game_prime:main"
 brain-games = "brain_games.scripts.brain_games:main"
-brain-calc = "brain_games.games.game_calc:main"
-brain-even = "brain_games.games.game_even:main"
-brain-gcd = "brain_games.games.game_gcd:main"
-brain-progression = "brain_games.games.game_progression:main"
-brain-prime = "brain_games.games.game_prime:main"
+brain-progression = "brain_games.scripts.game_progression:main"
 
 
 [tool.poetry.dependencies]

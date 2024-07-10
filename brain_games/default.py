@@ -1,37 +1,23 @@
 import prompt
 
 
-poento = 0
+max_rounds = 3
 
 
-def welcome_user():
+def start_def(game):
     global name
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-
-
-def plus_poento():
-    global poento
-    poento = poento + 1
-
-
-def sub_check(rspnd, prava):
-    if rspnd == prava:
-        print('Correct!')
-        plus_poento()
-    else:
-        print(f"'{rspnd}' is wrong answer :(.Correct answer was '{prava}'")
-        print(f"Let's try again, {name}!")
-
-
-def start_def(game):
-    global poento
-    welcome_user()
-    while poento != 3:
+    for i in range(1, max_rounds + 1):
         game.generate()
-        game.check()
-        if game.respondo != game.korekta:
+        if game.respondo == game.korekta:
+            print('Correct!')
+        else:
+            g_r = game.respondo
+            g_k = game.korekta  # flake8 жаловался на длинну следующей строки
+            print(f"'{g_r}' is wrong answer :(.Correct answer was '{g_k}'")
+            print(f"Let's try again, {name}!")
             break
-    if poento == 3:
+    if i == 3:
         print(f'Congratulations, {name}!')
