@@ -5,6 +5,13 @@ description = "Brain games : progression, prime, even, calc, gcd"
 authors = ["Emile Aubakirov <emilaubakirov@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/Korvo-iam/python-project-49"
+classifiers = [
+    "Natural Language :: Russian",
+    "Operating System :: Unix",
+    "Programming Language :: Python",
+    "License :: OSI Approved",
+    "Topic :: Games/Entertainment"
+]
 packages = [
   { include = "brain_games" },
 ]

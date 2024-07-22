@@ -6,9 +6,7 @@ DEMANDO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def generate():
-    global respondo, korekta
     demando = random.randint(1, 100)
-    print(DEMANDO)
     print(f'Question: {demando}')
     i = 1
     listo = []
@@ -21,11 +19,4 @@ def generate():
     else:
         korekta = 'no'
     respondo = prompt.string('Your answer: ')
-
-
-def main():
-    generate()
-
-
-if __name__ == '__main__':
-    main()
+    return respondo, korekta

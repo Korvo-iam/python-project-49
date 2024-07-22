@@ -6,7 +6,6 @@ DEMANDO = 'What number is missing in the progression?'
 
 
 def generate():
-    global respondo, korekta
     i = 0
     numero_1 = random.randint(0, 10)
     numero_2 = random.randint(1, 10)
@@ -21,14 +20,6 @@ def generate():
     numeroj[cifero] = '..'
     numeroj = [str(element) for element in numeroj]
     demando = " ".join(numeroj)
-    print(DEMANDO)
     print(f'Question: {demando}')
     respondo = prompt.integer('Your answer: ')
-
-
-def main():
-    generate()
-
-
-if __name__ == '__main__':
-    main()
+    return respondo, korekta
