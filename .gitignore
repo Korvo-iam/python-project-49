@@ -7,7 +7,7 @@ brain_games/scripts/__pycache__
 brain_games/games/__pycache__
 dist/
 brain_games/__pycache__
-/brain_games/__pycache__/
+/brain_games/__pycache__
 brain_games/__pycache__/
 brain_games/__pycache__/default.cpython-312.pyc
 brain_games/default.py
@@ -17,3 +17,5 @@ brain_games/games/__pycache__
 brain_games/games/__pycache__
 nova_sxlosilo
 nova_sxlosilo.pub
+saved_key
+saved_key.pub
