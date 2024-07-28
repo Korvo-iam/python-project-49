@@ -5,8 +5,7 @@ max_rounds = 3
 
 
 def start_def(game):
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
+    name = prompt.string("Welcome to the Brain Games!\n" + "May I have your name? ")
     print(f'Hello, {name}!')
     for i in range(1, max_rounds + 1):
         print(game.DEMANDO)

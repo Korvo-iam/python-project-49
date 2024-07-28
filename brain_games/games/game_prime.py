@@ -7,9 +7,9 @@ DEMANDO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def generate():
     demando = random.randint(1, 100)
-    print(f'Question: {demando}')
     i = 1
     listo = []
+    print(f'Question: {demando}')
     while i != demando:
         if demando % i == 0:
             listo.append(i)
