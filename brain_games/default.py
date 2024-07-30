@@ -1,13 +1,14 @@
 import prompt
 
 
-max_rounds = 3
+MAX_ROUNDS = 3
+WELCOME = "Welcome to the Brain Games!\n" + "May I have your name? "
 
 
 def start_def(game):
-    name = prompt.string("Welcome to the Brain Games!\n" + "May I have your name? ")
+    name = prompt.string(WELCOME)
     print(f'Hello, {name}!')
-    for i in range(1, max_rounds + 1):
+    for i in range(1, MAX_ROUNDS + 1):
         print(game.DEMANDO)
         respondo, korekta = game.generate()
         if respondo == korekta:
@@ -18,5 +19,5 @@ def start_def(game):
             print(f"'{g_r}' is wrong answer :(.Correct answer was '{g_k}'")
             print(f"Let's try again, {name}!")
             break
-        if i == max_rounds:
+        if i == MAX_ROUNDS:
             print(f'Congratulations, {name}!')
