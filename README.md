@@ -4,7 +4,7 @@ https://ru.hexlet.io/projects/49/members/39955/reviews
 
 https://github.com/Korvo-iam/python-project-49/actions
 
-[![asciicast](https://asciinema.org/a/VPpvTHMShvEiFE7TIgm1MXxjQ.svg)](https://asciinema.org/a/VPpvTHMShvEiFE7TIgm1MXxjQ)
+[![asciicast](https://asciinema.org/a/TxZCI1rFHQ1wB89zW5bLZeQMi.svg)](https://asciinema.org/a/TxZCI1rFHQ1wB89zW5bLZeQMi)
 
 ## Brain-games
 
