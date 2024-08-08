@@ -2,16 +2,15 @@ import random
 import prompt
 
 
-DEMANDO = 'Answer "yes" if the number is even, otherwise answer "no".'
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def generate():
-    randoma = random.randint(0, 20)
-    print(f'Question: {randoma}')
-    is_even = randoma % 2
-    respondo = prompt.string('Your answer: ')
+def get_guestion():
+    random_num = random.randint(0, 20)
+    question = (f'Question: {random_num}')
+    is_even = random_num % 2
     if is_even == 0:
-        korekta = 'yes'
-    elif is_even != 0:
-        korekta = 'no'
-    return respondo, korekta
+        correct = 'yes'
+    else:
+        correct = 'no'
+    return question, correct

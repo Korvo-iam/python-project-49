@@ -1,3 +1,6 @@
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/Korvo-iam/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Korvo-iam/python-project-49/actions)
+
 <a href="https://codeclimate.com/github/Korvo-iam/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/1d71d580ba31029ddb01/maintainability" /></a>
 
 https://ru.hexlet.io/projects/49/members/39955/reviews

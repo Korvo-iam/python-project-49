@@ -2,21 +2,20 @@ import random
 import prompt
 
 
-DEMANDO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def generate():
-    demando = random.randint(1, 100)
+def get_guestion():
+    demand = random.randint(1, 100)
     i = 1
-    listo = []
-    print(f'Question: {demando}')
-    while i != demando:
-        if demando % i == 0:
-            listo.append(i)
+    list = []
+    question = (f'Question: {demand}')
+    while i != demand:
+        if demand % i == 0:
+            list.append(i)
         i = i + 1
-    if len(listo) == 1 or demando == 1:
-        korekta = 'yes'
+    if len(list) == 1 or demand == 1:
+        correct = 'yes'
     else:
-        korekta = 'no'
-    respondo = prompt.string('Your answer: ')
-    return respondo, korekta
+        correct = 'no'
+    return question, correct

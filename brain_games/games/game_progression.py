@@ -2,24 +2,23 @@ import random
 import prompt
 
 
-DEMANDO = 'What number is missing in the progression?'
+QUESTION = 'What number is missing in the progression?'
 
 
-def generate():
+def get_guestion():
     i = 0
-    numero_1 = random.randint(0, 10)
-    numero_2 = random.randint(1, 10)
-    longo = 10
-    numeroj = []
-    while i != longo:
+    num_1 = random.randint(0, 10)
+    num_2 = random.randint(1, 10)
+    length = 10
+    numbers = []
+    while i != length:
         i = i + 1
-        numeroj.append(numero_1)
-        numero_1 = numero_1 + numero_2
-    cifero = random.randint(0, longo - 1)
-    korekta = numeroj[cifero]
-    numeroj[cifero] = '..'
-    numeroj = [str(element) for element in numeroj]
-    demando = " ".join(numeroj)
-    print(f'Question: {demando}')
-    respondo = prompt.integer('Your answer: ')
-    return respondo, korekta
+        numbers.append(num_1)
+        num_1 = num_1 + num_2
+    digit = random.randint(0, length - 1)
+    correct = numbers[digit]
+    numbers[digit] = '..'
+    numbers = [str(element) for element in numbers]
+    demand = " ".join(numbers)
+    question = (f'Question: {demand}')
+    return question, correct
