@@ -6,11 +6,8 @@ dist/
 /brain_games/__pycache__/
 /brain_games/__pycache__
 /brain_games/__pycache__*
-
 brain_games/games/__pycache__/
-
 brain_games/games/__pycache__/*
-
 brain_games/default.py
 nova_sxlosilo
 nova_sxlosilo.pub
