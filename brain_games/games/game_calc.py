@@ -1,5 +1,4 @@
 import random
-import prompt
 
 
 QUESTION = 'What is the result of the expression?'

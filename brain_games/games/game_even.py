@@ -1,5 +1,4 @@
 import random
-import prompt
 
 
 QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
