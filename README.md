@@ -3,11 +3,13 @@
 
 <a href="https://codeclimate.com/github/Korvo-iam/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/1d71d580ba31029ddb01/maintainability" /></a>
 
+[![asciicast](https://asciinema.org/a/TxZCI1rFHQ1wB89zW5bLZeQMi.svg)](https://asciinema.org/a/TxZCI1rFHQ1wB89zW5bLZeQMi)
+
+## Links
+
 https://ru.hexlet.io/projects/49/members/39955/reviews
 
 https://github.com/Korvo-iam/python-project-49/actions
-
-[![asciicast](https://asciinema.org/a/TxZCI1rFHQ1wB89zW5bLZeQMi.svg)](https://asciinema.org/a/TxZCI1rFHQ1wB89zW5bLZeQMi)
 
 ## Brain-games
 
