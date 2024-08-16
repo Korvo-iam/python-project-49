@@ -1,4 +1,4 @@
-from brain_games.games import game_progression as game
+from brain_games.games import progression as game
 from brain_games import general_template as g_t
 
 

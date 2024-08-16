@@ -11,15 +11,13 @@ def start_game(game):
     for i in range(1, roundsCount + 1):
         print(game.QUESTION)
         question, correct = game.get_guestion()
-        print(question)
+        print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
-        if answer == str(correct):
-            print('Correct!')
-        else:
-            g_a = answer
-            g_c = correct  # flake8 жаловался на длинну следующей строки
-            print(f"'{g_a}' is wrong answer :(.Correct answer was '{g_c}'")
-            print(f"Let's try again, {name}!")
+        if answer != str(correct):
+            print(f"'{answer}' is wrong answer :(."
+                  f" Correct answer was '{correct}'\n"
+                  f"Let's try again, {name}!")
             break
+        print('Correct!')
     else:
         print(f'Congratulations, {name}!')

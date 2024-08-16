@@ -10,14 +10,12 @@ def get_guestion():
     num_2 = random.randint(1, 10)
     length = 10
     numbers = []
-    while i != length:
-        i = i + 1
+    for i in range(0, 10, 1):
         numbers.append(num_1)
         num_1 = num_1 + num_2
     digit = random.randint(0, length - 1)
     correct = numbers[digit]
     numbers[digit] = '..'
     numbers = [str(element) for element in numbers]
-    demand = " ".join(numbers)
-    question = (f'Question: {demand}')
+    question = f'{" ".join(numbers)}'
     return question, correct

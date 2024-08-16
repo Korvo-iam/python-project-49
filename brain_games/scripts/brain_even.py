@@ -1,4 +1,4 @@
-from brain_games.games import game_even as game
+from brain_games.games import even as game
 from brain_games import general_template as g_t
 
 
