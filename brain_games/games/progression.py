@@ -5,14 +5,11 @@ QUESTION = 'What number is missing in the progression?'
 
 
 def get_guestion():
-    i = 0
-    num_1 = random.randint(0, 10)
-    num_2 = random.randint(1, 10)
     length = 10
-    numbers = []
-    for i in range(0, 10, 1):
-        numbers.append(num_1)
-        num_1 = num_1 + num_2
+    start = random.randint(1,10)
+    step = random.randint(1,10)
+    stop = start + (length * step)
+    numbers = list(range(start, stop, step))
     digit = random.randint(0, length - 1)
     correct = numbers[digit]
     numbers[digit] = '..'
