@@ -11,8 +11,7 @@ def get_guestion():
     stop = start + (length * step)
     numbers = list(range(start, stop, step))
     digit = random.randint(0, length - 1)
-    correct = numbers[digit]
-    numbers[digit] = '..'
-    numbers = [str(element) for element in numbers]
-    question = f'{" ".join(numbers)}'
+    correct, numbers[digit] = numbers[digit], '..'
+    numbers = list(map(str, numbers))
+    question = " ".join(numbers)
     return question, correct
