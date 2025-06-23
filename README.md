@@ -13,11 +13,13 @@ https://github.com/Korvo-iam/python-project-49/actions
 
 ## Project description / Описание проекта
 🇷🇺Brain-games это набор из 5 математических игр, написанных на Python версии 3.11 с использованием Makefile и .toml-файла.
+
 🇬🇧Brain-games is a complex of 5 mathematical games written in python version 3.11 with usage of Makefile and .toml-file
 
 ## Installation / Установка
 
 🇷🇺Используйте следующую команду чтобы построить проект
+
 🇬🇧Use next command to build the project
 
 ```bash
@@ -25,6 +27,7 @@ make build
 ```
 
 🇷🇺Используйте следующую команду чтобы установить зависимые пакеты
+
 🇬🇧Use next command to install packages
 
 ```bash
@@ -32,6 +35,7 @@ make package-install
 ```
 
 🇷🇺Далее установите poetry с помощью указанной команды
+
 🇬🇧Next install poetry using command
 
 ```bash
